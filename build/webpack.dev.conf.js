@@ -13,6 +13,10 @@ const portfinder = require('portfinder')
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
+const sleep = function (d) {
+  for (let t = Date.now(); Date.now() - t <= d;);
+}
+
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
@@ -42,6 +46,40 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     quiet: true, // necessary for FriendlyErrorsPlugin
     watchOptions: {
       poll: config.dev.poll,
+    },
+    before (app) {
+      app.get('/api/getDetail', function (req, res) {
+        sleep(500)
+        res.json({
+          code: 200,
+          data: {
+            id: 1,
+            title: 'Day 1',
+            content: 'Today is a nice day.'
+          }
+        })
+      });
+
+      app.get('/api/getList', function (req, res) {
+        sleep(500)
+        res.json({
+          code: 200,
+          data: [
+            {
+              id: 1,
+              title: 'Day 1'
+            },
+            {
+              id: 2,
+              title: 'Day 2'
+            },
+            {
+              id: 3,
+              title: 'Day 3'
+            }
+          ]
+        })
+      });
     }
   },
   plugins: [
@@ -54,7 +92,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'index.html',
+      template: './src/index.html',
       inject: true
     }),
     // copy custom static assets

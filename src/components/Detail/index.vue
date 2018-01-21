@@ -1,5 +1,7 @@
-<template lang="pug">
-
+<template lang="html">
+  <div>
+    This is a detail page.
+  </div>
 </template>
 
 <script>

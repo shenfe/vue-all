@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Header :current="current" />
-    <router-view/>
+    <Header :current="activeNav" :links="navs" />
+    <router-view />
   </div>
 </template>
 
@@ -13,9 +13,18 @@ export default {
   components: {
     Header
   },
-  beforeRouteUpdate (to, from, next) {
-    // react to route changes...
-    // don't forget to call next()
+  data () {
+    return {
+      navs: [
+        { alias: 'list', text: 'list' },
+        { alias: 'about', text: 'about' }
+      ]
+    }
+  },
+  computed: {
+    activeNav: function () {
+      return this.$route.name
+    }
   }
 }
 </script>

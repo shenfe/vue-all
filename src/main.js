@@ -6,14 +6,12 @@ import './global.css'
 import Vue from 'vue'
 import App from './App'
 import router from './router.js'
-import Vuex from 'vuex'
 
 // Global components
 import Loading from './components/GLoading'
 
+// Vuex store
 import store from './store'
-
-Vue.use(Vuex)
 
 Vue.config.productionTip = false
 
