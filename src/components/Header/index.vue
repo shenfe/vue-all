@@ -20,8 +20,6 @@ export default {
 
 <style lang="scss" scoped>
 ul.nav {
-  margin: 0;
-  padding: 0;
   height: 64px;
   li {
     line-height: 32px;

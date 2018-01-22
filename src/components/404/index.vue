@@ -1,5 +1,6 @@
 <template lang="html">
   <div>
-    404 | Not found
+    <h1>404</h1>
+    <p>Not found</p>
   </div>
 </template>

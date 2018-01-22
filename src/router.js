@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import List from '@/components/List'
 import Detail from '@/components/Detail'
 import About from '@/components/About'
+import NotFound from '@/components/404'
 
 Vue.use(Router)
 
@@ -26,6 +27,10 @@ export default new Router({
       path: '/about',
       name: 'about',
       component: About
+    },
+    {
+      path: '*',
+      component: NotFound
     }
   ]
 })

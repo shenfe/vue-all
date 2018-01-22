@@ -1,4 +1,4 @@
-body {
+body, ul {
   margin: 0;
   border: 0;
   padding: 0;
@@ -6,6 +6,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+input {
+  outline: none;
 }
 
 .global-floatclear {
