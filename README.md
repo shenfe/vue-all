@@ -1,6 +1,6 @@
 # vue-all
 
->  A template project using mpst official or recommended vue libraries.
+>  A template project using most official or recommended vue libraries.
 
 ## Build Setup
 
