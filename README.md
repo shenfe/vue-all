@@ -1,6 +1,6 @@
 # vue-all
 
->  a template project using all vue libs.
+>  A template project using mpst official or recommended vue libraries.
 
 ## Build Setup
 
@@ -25,3 +25,13 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## File Structure
+
+| Path | Content |
+| :--- | :--- |
+| /src | Source codes. |
+| /static | Static files. |
+| /config | Building configurations. |
+| /build | Building scripts. |
+| /test | Testing scripts. |
