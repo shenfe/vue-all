@@ -5,12 +5,14 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    curentPage: ''
+  },
+  actions: {
   },
   mutations: {
-    increment (state) {
-      state.count++
-    }
+  },
+  getters: {
+  },
+  modules: {
   }
 })
 
