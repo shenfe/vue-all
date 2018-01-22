@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Header :current="activeNav" :links="navs" />
-    <router-view />
+    <keep-alive :exclude="/Detail/">
+      <router-view />
+    </keep-alive>
   </div>
 </template>
 

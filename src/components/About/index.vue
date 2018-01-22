@@ -1,5 +1,6 @@
 <template lang="html">
   <div>
-    A template app with all vue libs.
+    <h1>vue-all</h1>
+    <p>A template project for Vue libs.</p>
   </div>
 </template>

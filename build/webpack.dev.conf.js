@@ -53,8 +53,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         res.json({
           code: 200,
           data: {
-            id: 1,
-            title: 'Day 1',
+            id: req.query.id,
+            title: `Day ${req.query.id}`,
             content: 'Today is a nice day.'
           }
         })

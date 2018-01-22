@@ -1,0 +1,24 @@
+ul.list {
+  margin: 0;
+  padding: 0 32px;
+  list-style: none;
+  li {
+    text-align: left;
+    line-height: 32px;
+    a {
+      display: block;
+    }
+    &.active a {
+      color: lightseagreen;
+    }
+  }
+}
+
+input {
+  width: 80%;
+  height: 32px;
+  margin: 8px;
+  font-size: 16px;
+  line-height: 32px;
+  text-indent: 1em;
+}
