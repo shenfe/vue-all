@@ -1,6 +1,6 @@
 # vue-all
 
->  A template project using most official or recommended vue libraries.
+> 一个模板项目，用于快速开始使用Vue及Vue官方或推荐库开发建站。
 
 ## Build Setup
 
@@ -24,14 +24,21 @@ npm run unit
 npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+详见[http://vuejs-templates.github.io/webpack/commands.html](http://vuejs-templates.github.io/webpack/commands.html)。
 
 ## File Structure
 
 | Path | Content |
 | :--- | :--- |
-| /src | Source codes. |
-| /static | Static files. |
-| /config | Building configurations. |
-| /build | Building scripts. |
-| /test | Testing scripts. |
+| /src | 源码。 |
+| /src/index.html | 主页面文件。 |
+| /src/main.js | 主入口。 |
+| /src/App.vue | 主组件。 |
+| /src/router.js | 路由。 |
+| /src/components | 组件。 |
+| /src/assets | 资源文件。 |
+| /src/store | Vuex状态存储。 |
+| /static | 静态文件。 |
+| /config | 构建配置。 |
+| /build | 构建脚本。 |
+| /test | 测试脚本。 |
