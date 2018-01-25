@@ -49,6 +49,8 @@ npm test
 
 ## 快速开发
 
+可参考示例代码进行组件、路由、状态数据的快速开发。
+
 ### 组件
 
 在components文件夹下，每个文件夹是一个组件。
@@ -87,7 +89,7 @@ npm test
 
 ## 本地开发和测试
 
-在`build/webpack.dev.conf.js`中，通过变量`devWebpackConfig`配置webpack-dev-server。
+在build/webpack.dev.conf.js中，通过变量`devWebpackConfig`配置webpack-dev-server。
 
 例如，通过`devServer.historyApiFallback`配置前端路由，通过`devServer.proxy`配置接口请求代理，通过`devServer.before`配置mock接口请求。
 
