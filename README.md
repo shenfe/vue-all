@@ -51,6 +51,8 @@ npm test
 
 可参考示例代码进行组件、路由、状态数据的快速开发。
 
+![](./readme_assets/demo.gif)
+
 ### 组件
 
 在components文件夹下，每个文件夹是一个组件。
