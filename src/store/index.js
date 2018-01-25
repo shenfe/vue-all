@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
+import moduleList from './list'
+
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
@@ -13,6 +15,7 @@ const store = new Vuex.Store({
   getters: {
   },
   modules: {
+    list: moduleList
   }
 })
 
