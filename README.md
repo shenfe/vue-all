@@ -89,6 +89,24 @@ npm test
 
 详细参考[Vuex](https://vuex.vuejs.org/zh-cn/getting-started.html)。
 
+## 特性速查
+
+| 特性 | 示例 |
+| ：---： | ：--- |
+| 路由 | -- |
+| 路由变化响应 | -- |
+| 数据获取 | -- |
+| computed（计算属性） | -- |
+| watch（侦听器） | -- |
+| class绑定 | -- |
+| 条件渲染 | -- |
+| 列表渲染 | -- |
+| 表单输入绑定 | -- |
+| mixin（混合） | -- |
+| directive（指令） | -- |
+| 插件 | -- |
+| 状态管理 | -- |
+
 ## 本地开发和测试
 
 在build/webpack.dev.conf.js中，通过变量`devWebpackConfig`配置webpack-dev-server。
