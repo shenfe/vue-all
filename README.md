@@ -89,7 +89,17 @@ npm test
 
 详细参考[Vuex](https://vuex.vuejs.org/zh-cn/getting-started.html)。
 
-## 特性速查
+## 本地开发和测试
+
+在build/webpack.dev.conf.js中，通过变量`devWebpackConfig`配置webpack-dev-server。
+
+例如，通过`devServer.historyApiFallback`配置前端路由，通过`devServer.proxy`配置接口请求代理，通过`devServer.before`配置mock接口请求。
+
+详细配置参考[DevServer](https://webpack.js.org/configuration/dev-server/#devserver-before)。
+
+配置过程中，建议将路由、代理、mock接口从webpack配置中抽离。
+
+## 常用特性速查参考
 
 | 特性 | 示例 |
 | ：---： | ：--- |
@@ -106,13 +116,3 @@ npm test
 | directive（指令） | -- |
 | 插件 | -- |
 | 状态管理 | -- |
-
-## 本地开发和测试
-
-在build/webpack.dev.conf.js中，通过变量`devWebpackConfig`配置webpack-dev-server。
-
-例如，通过`devServer.historyApiFallback`配置前端路由，通过`devServer.proxy`配置接口请求代理，通过`devServer.before`配置mock接口请求。
-
-详细配置参考[DevServer](https://webpack.js.org/configuration/dev-server/#devserver-before)。
-
-配置过程中，建议将路由、代理、mock接口从webpack配置中抽离。
