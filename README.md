@@ -67,7 +67,7 @@ npm test
 
 ### 路由
 
-在router.js文件中配置所有路由。请灵活使用嵌套路由、命名路由。
+在router.js文件中配置所有路由。请灵活使用嵌套路由、命名路由、路由[懒加载](https://router.vuejs.org/zh-cn/advanced/lazy-loading.html)。
 
 在组件中，router-view标签是路由匹配的组件的渲染容器，router-link标签是便于表示路由链接的组件（会被渲染为a标签）。
 
